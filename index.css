@@ -269,7 +269,8 @@ main {
 /*___Hero___*/
 .hero {
 	background-image: url('images/HERO1.png');
-	background-size: 100% 100%;
+	background-size: cover;
+	background-position: center;
 	height: 35rem;
 	display: flex;
 	flex-direction: column;
@@ -301,7 +302,7 @@ main {
 	color: white;
 	border: 3px solid white;
 	text-align: center;
-	padding: 10vh 5vh;
+	padding: 7rem 5rem;
 	width: auto;
 	height: auto;
 	text-transform: uppercase;
@@ -437,6 +438,7 @@ main {
 	font-size: 1rem;
 	text-transform: uppercase;
 	margin-bottom: 6vh;
+	letter-spacing: 1px;
 	cursor: pointer;
 	transition-property: color background-color border;
 	transition-duration: 150ms;
@@ -550,6 +552,7 @@ main {
 	padding: 2vh 2vw;
 	background-color: rgba(0, 0, 0, 0);
 	color: white;
+	letter-spacing: 1px;
 	font-size: 1rem;
 	text-transform: uppercase;
 	margin-bottom: 6vh;
@@ -759,7 +762,8 @@ main {
 /*___Real___*/
 .footer__real {
 	background-image: url('images/FOOTER.png');
-	background-size: 100% 100%;
+	background-size: cover;
+	background-position: center;
 	width: 100%;
 	display: flex;
 	flex-direction: row;
@@ -869,6 +873,7 @@ main {
 	border: none;
 	text-transform: uppercase;
 	font-size: 1rem;
+	letter-spacing: 1px;
 	padding: 0.7rem;
 	cursor: pointer;
 	transition-property: color background-color;
