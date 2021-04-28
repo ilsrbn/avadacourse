@@ -79,7 +79,7 @@ header {
 }
 
 header > * {
-	padding: 0 10%;
+	padding: 0 20%;
 }
 
 @media only screen and (max-width: 720px) {
@@ -322,7 +322,7 @@ main {
 }
 
 .hero .description {
-	padding: 0 10%;
+	padding: 0 20%;
 	color: white;
 	text-transform: uppercase;
 	text-align: center;
@@ -423,7 +423,7 @@ main {
 	height: 100%;
 	background-image: url('images/NEWCOLLECTION.png');
 	background-size: cover;
-	background-position: center;
+	background-position: left;
 	flex: 46%;
 	display: flex;
 	flex-direction: column;
@@ -508,11 +508,17 @@ main {
 .hero2 {
 	display: flex;
 	flex-direction: row;
+	flex-wrap: nowrap;
 	height: 25rem;
 }
 
 .hero2 .left {
 	flex: 46%;
+	background-image: url('images/HERO2.png');
+
+	height: 100%;
+	background-size: cover;
+	background-position: center;
 }
 
 .hero2 .right {
@@ -565,7 +571,7 @@ main {
 
 .hero2 button:hover {
 	color: #000;
-	background-color: rgba(255, 255, 255, 1);
+	background-color: white;
 	border: 1px solid #ccc;
 }
 
@@ -618,7 +624,7 @@ main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 2rem 10%;
+	padding: 2rem 20%;
 }
 
 .list .title {
@@ -694,7 +700,7 @@ main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 2rem 10%;
+	padding: 2rem 20%;
 	background-color: #0f0f0f;
 }
 
@@ -787,10 +793,10 @@ main {
 }
 
 .footer__real .description {
-	margin-left: 10%;
+	margin-left: 20%;
 	flex-basis: 33.333333%;
 	display: flex;
-	flex-direction: column; 
+	flex-direction: column;
 }
 
 .footer__real .title {
@@ -844,7 +850,7 @@ main {
 
 .footer__real .mail {
 	flex-basis: 33.333333%;
-	margin-right: 10%;
+	margin-right: 20%;
 	display: flex;
 	flex-direction: column;
 }
