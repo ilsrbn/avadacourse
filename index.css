@@ -79,7 +79,13 @@ header {
 }
 
 header > * {
-	padding: 0 15%;
+	padding: 0 10%;
+}
+
+@media only screen and (min-width: 2000px) {
+	header > * {
+		padding: 0 20%;
+	}
 }
 
 @media only screen and (max-width: 720px) {
@@ -271,11 +277,53 @@ main {
 	background-image: url('images/HERO1.png');
 	background-size: cover;
 	background-position: center;
-	height: 35rem;
+	height: auto;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-around;
+}
+
+.hero .logo {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	color: white;
+	border: 3px solid white;
+	text-align: center;
+	padding: 7rem 5rem;
+	width: auto;
+	height: auto;
+	text-transform: uppercase;
+	cursor: default;
+	margin: 7rem 0 0;
+}
+
+.hero .logo__top {
+	font-family: 'Post No Bills Jaffna Bold';
+	font-size: 4rem;
+	line-height: 4rem;
+	border-bottom: 3px solid white;
+}
+
+.hero .logo__bottom {
+	margin-top: 1rem;
+	font-size: 1.4rem;
+}
+
+.hero .description {
+	padding: 0 10%;
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 4rem 10% 7rem;
+}
+
+@media only screen and (min-width: 2000px) {
+	.hero .description {
+		padding: 0 20%;
+	}
 }
 
 @media only screen and (max-width: 720px) {
@@ -293,40 +341,6 @@ main {
 		margin: 2.5rem 2rem 2.5rem;
 	}
 }
-
-.hero .logo {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
-	color: white;
-	border: 3px solid white;
-	text-align: center;
-	padding: 7rem 5rem;
-	width: auto;
-	height: auto;
-	text-transform: uppercase;
-	cursor: default;
-}
-
-.hero .logo__top {
-	font-family: 'Post No Bills Jaffna Bold';
-	font-size: 4rem;
-	line-height: 4rem;
-	border-bottom: 3px solid white;
-}
-
-.hero .logo__bottom {
-	margin-top: 2vh;
-	font-size: 1.4rem;
-}
-
-.hero .description {
-	padding: 0 15%;
-	color: white;
-	text-transform: uppercase;
-	text-align: center;
-}
 /*___Hero___*/
 
 
@@ -335,9 +349,9 @@ main {
 .demo {
 	display: flex;
 	flex-direction: row;
-	align-items: center;
+	align-items: stretch;
 	flex-wrap: nowrap;
-	height: 30rem;
+	height: auto;
 }
 
 @media only screen and (max-width: 720px) {
@@ -349,10 +363,11 @@ main {
 
 .demo__left {
 	display: flex;
-	flex: 54%;
-	padding: 4vh 10vh;
+	flex: 55%;
+	padding: 5rem 2rem;
 	flex-direction: column;
 	align-items: center;
+	width: 100%;
 }
 
 .demo__left .title {
@@ -361,25 +376,30 @@ main {
 	font-weight: 700;
 	color: white;
 	text-transform: uppercase;
-	margin-bottom: 7vh;
+	margin-bottom: 2.5rem;
 }
 
 .demo__left .line {
 	height: 1px;
 	width: 18%;
 	background-color: white;
-	margin-bottom: 5vh;
+	margin-bottom: 2.5rem;
+}
+
+.splide {
+	width: 100%;
 }
 
 .splide__list {
 	display: flex;
+	width: 100%;
 	flex-direction: row;
-	justify-content: space-around;
-	gap: 5vh;
+	justify-content: space-between;
+	gap: 1rem;
 }
 
 .demo__left .splide__list img {
-	max-width: 100%;
+	width: 100%;
 	cursor: pointer;
 	opacity: 1;
 	transition: opacity 150ms ease-in;
@@ -389,10 +409,16 @@ main {
 	opacity: 0.7;
 }
 
+@media only screen and (min-width: 2000px) {
+	.demo__left {
+		padding: 5rem 6%;
+	}
+}
+
 @media only screen and (max-width: 720px) {
 	.demo__left {
 		width: 100%;
-		padding: 4vh 10%;
+		padding: 4rem 10%;
 	}
 
 	.demo__left .title {
@@ -420,25 +446,44 @@ main {
 }
 
 .demo__right {
-	height: 100%;
+
+	width: 100%;
 	background-image: url('images/NEWCOLLECTION.png');
 	background-size: cover;
-	background-position: left;
-	flex: 46%;
+	background-position: top;
+	flex: 45%;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
 	align-items: center;
+	margin: 0;
+	padding: 0;
+}
+
+.demo__right .title {
+	text-transform: uppercase;
+	font-family: 'Playfair Display';
+	font-size: 2rem;
+	font-weight: 700;
+	color: white;
+	margin-bottom: 2rem;
+}
+
+.demo__right .line {
+	height: 1px;
+	width: 15%;
+	background-color: white;
+	margin-bottom: 2rem;
 }
 
 .demo__right button {
 	border: 1px solid white;
-	padding: 2vh 2vw;
+	padding: 1rem 2vw;
 	background-color: rgba(0, 0, 0, 0);
 	color: white;
 	font-size: 1rem;
 	text-transform: uppercase;
-	margin-bottom: 6vh;
+	margin-bottom: 6rem;
 	letter-spacing: 1px;
 	cursor: pointer;
 	transition-property: color background-color border;
@@ -450,22 +495,6 @@ main {
 	color: rgba(0, 0, 0, 1);
 	background-color: rgba(255, 255, 255, 1);
 	border: 1px solid rgba(0, 0, 0, 0);
-}
-
-.demo__right .title {
-	text-transform: uppercase;
-	font-family: 'Playfair Display';
-	font-size: 2rem;
-	font-weight: 700;
-	color: white;
-	margin-bottom: 3vh;
-}
-
-.demo__right .line {
-	height: 1px;
-	width: 18%;
-	background-color: white;
-	margin-bottom: 3vh;
 }
 
 @media only screen and (max-width: 720px) {
@@ -508,15 +537,16 @@ main {
 .hero2 {
 	display: flex;
 	flex-direction: row;
+	align-items: stretch;
 	flex-wrap: nowrap;
-	height: 25rem;
+	height: auto;
 }
 
 .hero2 .left {
 	flex: 46%;
 	background-image: url('images/HERO2.png');
 
-	height: 100%;
+	width: 100%;
 	background-size: cover;
 	background-position: center;
 }
@@ -529,7 +559,7 @@ main {
 	justify-content: space-around;
 	align-items: center;
 	color: white;
-	padding: 5vh 10%;
+	padding: 5rem 15%;
 }
 
 .hero2 .title {
@@ -537,32 +567,32 @@ main {
 	font-weight: 400;
 	font-size: 2rem;
 	text-transform: uppercase;
-	margin-bottom: 5vh; 
+	margin-bottom: 2rem; 
 }
 
 .hero2 .line {
 	height: 1px;
 	width: 18%;
 	background-color: white;
-	margin-bottom: 5vh;
+	margin-bottom: 2rem;
 }
 
 .hero2 .description {
 	background-color: rgba(0, 0, 0, 0);
 	text-align: center;
-	margin-bottom: 5vh;
+	margin-bottom: 5rem;
 	font-size: 0.9rem;
 }
 
 .hero2 button {
 	border: 1px solid white;
-	padding: 2vh 2vw;
+	padding: 1rem 2vw;
 	background-color: rgba(0, 0, 0, 0);
 	color: white;
 	letter-spacing: 1px;
 	font-size: 1rem;
 	text-transform: uppercase;
-	margin-bottom: 6vh;
+	margin-bottom: 1rem;
 	cursor: pointer;
 	transition-property: color background-color border;
 	transition-duration: 150ms;
@@ -624,7 +654,7 @@ main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 2rem 15%;
+	padding: 5rem 10%;
 }
 
 .list .title {
@@ -633,6 +663,7 @@ main {
 	font-size: 2rem;
 	color: white;
 	text-align: center;
+	width: 100%;
 	margin-bottom: 2rem;
 	text-transform: uppercase;
 }
@@ -641,26 +672,29 @@ main {
 	height: 1px;
 	width: 18%;
 	background-color: white;
-	margin-bottom: 2rem;
+	margin-bottom: 4rem;
 }
 
 .list .cards {
 	display: flex;
 	flex-direction: row;
+	width: 100%;
 	flex-wrap: wrap;
-	justify-content: space-between;
-	gap: 1vw;
+	justify-content: space-around;
+	gap: 2%;
 }
 
 .list .card {
 	flex-basis: 23%;
+	margin-bottom: 2%;
+	padding: 0;
 }
 /*.splide__slide {
 	max-width: 100%;
 }*/
 
 .card img {
-	max-width: 100%;
+	width: 100%;
 	height: auto;
 	cursor: pointer;
 	opacity: 1;
@@ -670,7 +704,11 @@ main {
 .list img:hover {
 	opacity: 0.7;
 }
-
+@media only screen and (min-width: 2000px) {
+	.list {
+		padding: 5rem 20%;
+	}
+}
 @media only screen and (max-width: 720px) {
 	.list {
 		padding: 3rem 10%;
@@ -700,7 +738,7 @@ main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 2rem 15%;
+	padding: 2rem 10%;
 	background-color: #0f0f0f;
 }
 
@@ -717,11 +755,12 @@ main {
 	height: 1px;
 	width: 18%;
 	background-color: white;
-	margin-bottom: 2rem;
+	margin-bottom: 3rem;
 }
 
 .partners .brands {
 	display: flex;
+	width: 100%;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: space-between;
@@ -740,6 +779,12 @@ main {
 
 .partners img:hover {
 	opacity: 0.7;
+}
+
+@media only screen and (min-width: 2000px) {
+	.partners {
+		padding: 5rem 20% 4rem;
+	}
 }
 
 @media only screen and (max-width: 720px) {
@@ -776,7 +821,7 @@ main {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: flex-start;
-	gap: 2rem;
+	gap: 3.333333%;
 }
 
 @media only screen and (max-width: 720px) {
@@ -793,8 +838,8 @@ main {
 }
 
 .footer__real .description {
-	margin-left: 15%;
-	flex-basis: 33.333333%;
+	margin-left: 10%;
+	flex-basis: 30%;
 	display: flex;
 	flex-direction: column;
 }
@@ -813,16 +858,20 @@ main {
 }
 
 .footer__real .categories {
-	flex-basis: 33.333333%;
+	flex-basis: 30%;
 	display: flex;
 	flex-direction: column;
 }
 
 .footer__real .buttons {
 	display: flex;
+	width: 100%;
+	margin: 0;
+	padding: 0;
 	flex-direction: row;
 	justify-content: flex-start;
 	flex-wrap: wrap;
+	gap: 1rem;
 }
 
 .footer__real .buttons button {
@@ -830,7 +879,7 @@ main {
 	border: none;
 	padding: 0.6rem;
 	color: #d1d1d1;
-	margin: 0.5rem;
+	margin: 0;
 	cursor: pointer;
 	transition-property: background-color color;
 	transition-duration: 150ms;
@@ -849,8 +898,8 @@ main {
 }
 
 .footer__real .mail {
-	flex-basis: 33.333333%;
-	margin-right: 15%;
+	flex-basis: 30%;
+	margin-right: 10%;
 	display: flex;
 	flex-direction: column;
 }
@@ -870,9 +919,11 @@ main {
 
 .footer__real input {
 	border: none;
-	background-color: rgba(255, 255, 255, 0.6);
+	background-color: rgba(155, 155, 155, 0.6);
+	color: #f7f7f7;
 	font-size: 0.9rem;
 	padding: 0.2rem;
+	padding-left: 0.8rem;
 }
 .footer__real form button {
 	background-color: #0f0f0f;
@@ -886,6 +937,21 @@ main {
 	transition-property: color background-color;
 	transition-duration: 150ms;
 	transition-timing-function: ease-in;
+}
+
+@media only screen and (min-width: 2000px) {
+	.footer__real > * {
+		margin-top: 4rem;
+		margin-bottom: 4rem;
+	}
+
+	.footer__real .mail {
+		margin-right: 20%;
+	}
+
+	.footer__real .description {
+		margin-left: 20%;
+	}
 }
 
 @media only screen and (max-width: 720px) {
@@ -905,6 +971,37 @@ main {
 .footer__real form button:hover {
 	background-color: #d1d1d1;
 	color: #0f0f0f;
+}
+
+.footer__fake {
+	background-color: #0f0f0f;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding: 0.7rem 10%;
+}
+
+.footer__fake > * {
+	color: #d1d1d1;
+	font-size: 0.8rem;
+}
+
+.footer__fake .right {
+	text-decoration: underline;
+	font-weight: 700;
+	color: white;
+}
+
+@media only screen and (min-width: 2000px) {
+	.footer__fake {
+		padding: 1rem 20%;
+	}
+
+	.footer__fake > * {
+		font-size: 1rem;
+	}
 }
 /*___Real___*/
 /*_Footer_*/
