@@ -963,6 +963,10 @@ main {
 		font-size: 1.2rem;
 	}
 
+	.mail form {
+		flex-direction: column;
+	}
+
 	.mail form input {
 		font-size: 1.2rem;
 	}
