@@ -461,7 +461,7 @@ main {
 	font-weight: 700;
 }
 
-@media only screen and (min-width: 2000px) {
+@media only screen and (min-width: 1500px) {
 	.demo__left {
 		padding: 5rem 3%;
 	}
@@ -477,7 +477,7 @@ main {
 		padding: 0 1.5%;
 	}
 	.demo__left .splide__list img {
-		height: 22rem;
+		height: 25rem;
 	}
 
 	.splide__slide h3 {
@@ -819,13 +819,13 @@ main {
 	font-size: 1rem;
 }
 
-@media only screen and (min-width: 2000px) {
+@media only screen and (min-width: 1500px) {
 	.list {
 		padding: 5rem 20%;
 	}
 
 	.cards .card img {
-		height: 22rem;
+		height: 25rem;
 	}
 
 	.cards .card h3 {
