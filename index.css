@@ -1186,6 +1186,7 @@ main {
 @media only screen and (max-width: 767px) {
 	.partners {
 		padding: 4rem 0;
+		overflow: hidden;
 	}
 
 	.partners .title {
@@ -1201,6 +1202,7 @@ main {
 	.partners .cd {
 		width: 100%;
 		position: relative;
+		overflow: hidden;
 	}
 
 	.partners .brands {
@@ -1211,6 +1213,7 @@ main {
 	.partners .brands__mobile {
 		display: flex;
 		justify-content: center;
+		overflow: hidden;
 	}
 
 	.partners .brands__mobile .card__mobile {
