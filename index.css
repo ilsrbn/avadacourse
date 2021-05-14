@@ -954,6 +954,10 @@ main {
 	margin-right: auto;
 }
 
+.list .cards__mobile {
+	display: none;
+}
+
 .list .cards {
 	display: flex;
 	flex-direction: row;
@@ -1143,6 +1147,10 @@ main {
 	margin-bottom: 3rem;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.partners .brands__mobile {
+	display: none;
 }
 
 .partners .brands {
