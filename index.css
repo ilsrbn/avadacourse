@@ -505,6 +505,7 @@ main {
 	.demo__left {
 		width: 100%;
 		padding: 4rem 0;
+		overflow: hidden;
 	}
 
 	.demo__left .title {
@@ -529,9 +530,11 @@ main {
 	.splide {
 		padding: 0;
 		position: relative;
+		overflow: hidden;
 	}
 
 	.splide__list__mobile {
+		overflow: hidden;
 		display: flex;
 		justify-content: center;
 		width: 100%;
@@ -991,6 +994,7 @@ main {
 @media only screen and (max-width: 767px) {
 	.list {
 		padding: 3rem 0;
+		overflow: hidden;
 	}
 
 	.list .title {
@@ -1007,6 +1011,7 @@ main {
 	.list .ce {
 		width: 100%;
 		position: relative;
+		overflow: hidden;
 	}
 
 	.list .navButtons {
@@ -1021,6 +1026,7 @@ main {
 		display: flex;
 		justify-content: center;
 		width: 100%;
+		overflow: hidden;
 	}
 
 	.list .cards__mobile .card__mobile {
@@ -1035,6 +1041,7 @@ main {
 		justify-content: flex-start;
 		align-items: center;
 		height: 70vw;
+		overflow: hidden;
 	}
 
 	.list .cards__mobile .card__mobile.active-toRight {
