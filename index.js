@@ -6,9 +6,13 @@ var slidesTwo = document.querySelector('.cards__mobile').children;
 var prevButtonTwo = document.querySelector('.prevButton2');
 var nextButtonTwo = document.querySelector('.nextButton2');
 
-var index1 = 0;
+var slidesThree = document.querySelector('.brands__mobile').children;
+var prevButtonThree = document.querySelector('.prevButton3');
+var nextButtonThree = document.querySelector('.nextButton3');
 
+var index1 = 0;
 var index2 = 0;
+var index3 = 0;
 
 nextButtonOne.onclick = function () {
 	index1 = changeSlide('next', slidesOne, index1);	
@@ -25,6 +29,14 @@ nextButtonTwo.onclick = function () {
 
 prevButtonTwo.onclick = function () {
 	index2 = changeSlide('prev', slidesTwo, index2);
+}
+
+nextButtonThree.onclick = function () {
+	index3 = changeSlide('next', slidesThree, index3);
+}
+
+prevButtonThree.onclick = function () {
+	index3 = changeSlide('prev', slidesThree, index3);
 }
 
 function changeSlide(direction, slider, index) {
@@ -63,6 +75,8 @@ function changeSlide(direction, slider, index) {
 			slider[index + 1].classList.add('prev-toLeft')
 		}
 	}
+
+
 
 	console.log(index);
 
