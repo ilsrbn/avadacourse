@@ -43,13 +43,25 @@ function changeSlide(direction, slider, index) {
 	}
 	for (i = 0; i < slider.length ; i++) {
 		slider[i].classList.remove('active-toRight');
-		slider[i].classList.remove('active-toLeft')
+		slider[i].classList.remove('active-toLeft');
+		slider[i].classList.remove('prev-toRight');
+		slider[i].classList.remove('prev-toLeft');
 	}
 
 	if (direction == 'next') {
 		slider[index].classList.add('active-toRight');
+		if (index == 0) {
+			slider[slider.length - 1].classList.add('prev-toRight');
+		} else {
+			slider[index - 1].classList.add('prev-toRight');
+		}
 	} else {
 		slider[index].classList.add('active-toLeft');
+		if (index == slider.length - 1) {
+			slider[0].classList.add('prev-toLeft');
+		} else {
+			slider[index + 1].classList.add('prev-toLeft')
+		}
 	}
 
 	console.log(index);
