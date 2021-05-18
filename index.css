@@ -88,7 +88,7 @@ header > * {
 	}
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1023px) {
 	header > * {
 		padding: 0 2%;
 	}
@@ -209,7 +209,7 @@ header > * {
 	display: none;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1023px) {
 	.label {
 		display: block;
 		cursor: pointer;
@@ -285,7 +285,7 @@ main {
 	z-index: 1;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1023px) {
 	main {
 		padding-top: 1.8rem; 
 	}
@@ -345,7 +345,7 @@ main {
 	}
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1023px) {
 	.hero {
 		height: auto;
 		background-size: cover;
@@ -377,7 +377,7 @@ main {
 	height: auto;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1023px) {
 	.demo {
 		flex-direction: column;
 		height: auto;
@@ -501,7 +501,7 @@ main {
 	}
 }*/
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1023px) {
 	.demo__left {
 		width: 100%;
 		padding: 4rem 0 2rem;
@@ -555,7 +555,7 @@ main {
 		flex-direction: column;
 		justify-content: flex-start;
 		align-items: center;
-		height: 80vw;
+		height: 70vw;
 	}
 
 	.splide__slide__mobile.prev-toRight,
@@ -650,7 +650,7 @@ main {
 
 	.splide__slide__mobile img {
 		background-color: #1a1b1d;
-		height: 60vw;
+		height: 55vw;
 		max-width: 38.52vw;
 		object-fit: contain;
 	}
@@ -664,14 +664,14 @@ main {
 		font-family: 'Playfair Display';
 		font-weight: 400;
 		color: white;
-		font-size: 1rem;
+		font-size: 1.5rem;
 	}
 
 	.splide__slide__mobile h4 {
 		font-family: 'Playfair Display';
 		font-weight: 400;
 		color: white;
-		font-size: 0.8rem;
+		font-size: 1.2rem;
 	}
 
 	.navButtons {
@@ -704,6 +704,23 @@ main {
 		background-color: rgba(255, 255, 255, 0.2);
 	}
 }
+
+@media only screen and (max-width: 767px) {
+	.splide__slide__mobile h3 {
+		font-family: 'Playfair Display';
+		font-weight: 400;
+		color: white;
+		font-size: 1rem;
+	}
+
+	.splide__slide__mobile h4 {
+		font-family: 'Playfair Display';
+		font-weight: 400;
+		color: white;
+		font-size: 0.8rem;
+	}
+		
+	}
 
 .demo__right {
 
@@ -757,7 +774,7 @@ main {
 	border: 1px solid rgba(0, 0, 0, 0);
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1023px) {
 	.demo__right {
 		background-size: cover;
 		background-position: top;
@@ -866,7 +883,7 @@ main {
 	border: 1px solid #ccc;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1023px) {
 	.hero2 {
 		flex-direction: column;
 		height: auto;
@@ -1030,7 +1047,7 @@ main {
 		font-size: 1.3rem;
 	}
 }*/
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1023px) {
 	.list {
 		padding: 3rem 0;
 		overflow: hidden;
@@ -1080,7 +1097,7 @@ main {
 		flex-direction: column;
 		justify-content: flex-start;
 		align-items: center;
-		height: 80vw;
+		height: 70vw;
 		overflow: hidden;
 	}
 
@@ -1099,11 +1116,28 @@ main {
 
 	.cards__mobile .card__mobile img {
 		background-color: #1a1b1d;
-		height: 60vw;
+		height: 55vw;
 		max-width: 38.52vw;
 		object-fit: contain;
 	}
 
+	.cards__mobile .card__mobile h3 {
+		font-family: 'Playfair Display';
+		font-weight: 400;
+		color: white;
+		font-size: 1.5rem;
+	}
+
+	.cards__mobile .card__mobile h4 {
+		font-family: 'Playfair Display';
+		font-weight: 400;
+		color: white;
+		font-size: 1.2rem;
+	}
+	
+}
+
+@media only screen and (max-width: 767px) {
 	.cards__mobile .card__mobile h3 {
 		font-family: 'Playfair Display';
 		font-weight: 400;
@@ -1117,7 +1151,7 @@ main {
 		color: white;
 		font-size: 0.8rem;
 	}
-	
+
 }
 /*___List___*/
 
@@ -1183,7 +1217,7 @@ main {
 	}
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1023px) {
 	.partners {
 		padding: 4rem 0;
 		overflow: hidden;
@@ -1351,7 +1385,7 @@ main {
 	background-color: #d1d1d1;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1023px) {
 	.wrapper__row {
 		flex-direction: column;
 	}
