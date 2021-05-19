@@ -106,6 +106,10 @@ header > * {
 	align-items: center;
 }
 
+.fake__mobile {
+	display: none;
+}
+
 .fake > * {
 	height: 100%;
 }
@@ -149,9 +153,26 @@ header > * {
 	margin-right: 1rem;
 }
 
+.menu .fake__right {
+	display: none;
+}
+
 @media only screen and (max-width: 767px) {
 	.fake {
 		display: none;
+	}
+
+	.fake__mobile {
+		display: flex;
+	}
+
+	.fake__mobile .fake__left {
+		color: white;
+		background-color: #0f0f0f;
+	}
+
+	.menu .fake__right {
+		display: block;
 	}
 }
 /*___Fake___*/
