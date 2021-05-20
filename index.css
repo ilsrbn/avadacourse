@@ -162,14 +162,19 @@ header > * {
 		display: none;
 	}
 
-	.fake__mobile {
+	.real__right .menu .fake__mobile {
+		width: 100%;
 		display: flex;
+		flex-wrap: wrap;
+		height: initial;
+		color: white;
+		margin: 0 -1vw;
 	}
 
-	.fake__mobile .fake__left {
-		color: white;
-		background-color: #0f0f0f;
+	.real__right .menu .fake__mobile > * {
+		padding: 0 1vw;
 	}
+
 
 	.menu .fake__right {
 		display: block;
